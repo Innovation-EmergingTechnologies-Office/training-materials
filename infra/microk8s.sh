@@ -14,7 +14,7 @@ fi
 
 COMMAND="$1"
 AWS_PROFILE="$2"
-INSTANCE_NAME="${3:-microk8s-instance}"  # Default to 'microk8s-instance' if not provided
+INSTANCE_NAME="$3"
 
 # Function to get user confirmation
 confirm() {
