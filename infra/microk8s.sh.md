@@ -80,8 +80,3 @@ After creating an instance, the script provides:
 
 - Ensure your security group allows inbound traffic on ports `10443` and `3000` for accessing the Kubernetes Dashboard and Grafana.
 - Use a bastion host or VPN to connect to the private IP address if the instance does not have a public IP.
-
-## Author
-
-This script was developed by [Your Name]. For questions or support, feel free to reach out.
-```
