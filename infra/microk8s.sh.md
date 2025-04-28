@@ -37,7 +37,7 @@ microk8s.sh <command> <aws-profile> <subnet-id> <security-group-id> <keypair-nam
 Provisions a new EC2 instance with MicroK8s installed.
 
 ```bash
-microk8s.sh create <aws-profile> <subnet-id> <security-group-id> <keypair-name> [instance-name]
+./microk8s.sh create <aws-profile> <subnet-id> <security-group-id> <keypair-name> [instance-name]
 ```
 
 - **Parameters**:
@@ -57,7 +57,7 @@ microk8s.sh create <aws-profile> <subnet-id> <security-group-id> <keypair-name> 
 Terminates an existing EC2 instance by name.
 
 ```bash
-microk8s.sh delete <aws-profile> [instance-name]
+./microk8s.sh delete <aws-profile> [instance-name]
 ```
 
 - **Parameters**:
