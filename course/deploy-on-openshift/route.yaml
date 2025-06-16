@@ -1,0 +1,13 @@
+# nonk8s
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: my-service-route
+spec:
+  to:
+    kind: Service
+    name: my-service
+  port:
+    targetPort: 3000
+  tls:
+    termination: edge

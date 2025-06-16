@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: centos
+  name: centos
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: centos
+  template:
+    metadata:
+      labels:
+        app: centos
+    spec:
+      containers:
+      - image: centos:latest
+        imagePullPolicy: Always
+        name: centos
+        command: ["/bin/sleep", "3650d"]
+        resources: {}
